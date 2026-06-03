@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <header>
+    <h1 id="title">UiTM Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+  </header>
+
+  <form id="survey-form">
+    
+    <p><label id="name-label" for="name">Name</label>
+    <input 
+      id="name" 
+      type="text" 
+      placeholder="Enter your name" 
+      required
+    ></p>
+
+    <p><label id="email-label" for="email">Email</label>
+    <input 
+      id="email" 
+      type="email" 
+      placeholder="Enter your email" 
+      required
+    ></p>
+
+    <p><label id="number-label" for="number">Age</label>
+    <input 
+      id="number" 
+      type="number" 
+      min="1" 
+      max="99999999" 
+      placeholder="Enter age"
+    ></p>
+
+    <p>Select your programme</p>
+    <select id="dropdown">
+      <option value="">Select programme</option>
+      <option value="CS110">CS110</option>
+      <option value="CS267">CS267</option>
+      <option value="CS270">CS270</option>
+      <option value="CS264">CS264</option>
+      <option value="CS230">CS230</option>
+    </select>
+    <br><br>
+
+    <p>Are you a full-time student?</p>
+    <label>
+      <input type="radio" name="student-type" value="full-time"> Full-time
+    </label>
+    <label>
+      <input type="radio" name="student-type" value="part-time"> Part-time
+    </label>
+    <br><br>
+
+    <p>What do you like about UiTM?</p>
+    <label>
+      <input type="checkbox" value="facilities"> Facilities
+    </label>
+    <label>
+      <input type="checkbox" value="lecturers"> Lecturers
+    </label>
+    <label>
+      <input type="checkbox" value="environment"> Environment
+    </label>
+    <br><br>
+
+    <p>Additional Comments</p>
+    <textarea placeholder="Write your comments here..."></textarea>
+    <br><br>
+
+    <button id="submit" type="submit">Submit</button>
+
+  </form>
+</body>
+</html>
