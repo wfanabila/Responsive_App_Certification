@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PHP Technical Documentation Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <header>PHP Technical Documentation Page</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Variables">Variables</a>
+    <a class="nav-link" href="#Data_Types">Data Types</a>
+    <a class="nav-link" href="#Strings">Strings</a>
+    <a class="nav-link" href="#Numbers">Numbers</a>
+  </nav>
+
+  <main id="main-doc">
+
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>
+        <ol>
+          <li>PHP is an acronym for "PHP: Hypertext Preprocessor"</li>
+          <li>PHP is a widely-used, open source server-side scripting language</li>
+          <li>PHP scripts are executed on the server</li>
+          <li>PHP is free to download and use</li>
+        </ol>
+      </p>
+      <p>PHP is an amazing and popular language!</p>
+      <p>PHP is powerful enough to be at the core of the biggest blogging system on the web!</p>
+      <p>PHP is deep enough to run large social networks!</p>
+      <p>PHP is easy enough to be a beginner's first server-side scripting language!</p>
+      <h2>Why PHP?</h2>
+      <p>
+        <ol>
+          <li>PHP runs on all major platforms (Windows, Linux, Unix, Mac OS X, etc.)</li>
+          <li>PHP is compatible with all leading web servers (Nginx, Apache, Cloudflare, Microsoft IIS, etc.)</li>
+          <li>PHP supports a wide range of databases (MySQL, PostgreSQL, MS SQL, db2, Oracle Database, MongoDB, etc.)</li>
+          <li>PHP is easy to learn and runs efficiently on the server side</li>
+        </ol>
+      </p>
+      <h2>What Can PHP Do?</h2>
+      <p>
+        <ol>
+          <li>PHP can generate dynamic page content</li>
+          <li>PHP can collect form data</li>
+          <li>PHP can send and receive cookies</li>
+          <li>PHP can encrypt data</li>
+        </ol>
+      </p>
+      <p>With PHP you are not limited to output HTML. You can output images or PDF files. You can also output any text, such as XHTML and XML.</p>
+      <p>What is a PHP File?</p>
+      <p>
+        <ol>
+          <li>PHP files can contain text, HTML, CSS, JavaScript, and PHP code</li>
+          <li>PHP code is executed on the server, and the result is returned to the browser as HTML</li>
+        </ol></p>
+    </section>
+
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>Variables are "containers" for storing information.</p>
+      <p>A variable can have a short name (like <code>$x</code>and <code>$y</code>or a more descriptive name ( <code>$age</code> <code>$carname</code>)</p>
+      <p>Rules for PHP variables:</p>
+      <p>
+        <ol>
+          <li>A variable must start with the $ sign, followed by the name of the variable</li>
+          <li>A variable name must start with a letter or the underscore character</li>
+          <li>A variable name cannot start with a number</li>
+          <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+          <li>Variable names are case-sensitive ($age and $AGE are two different variables)</li>
+        </ol>
+      </p>
+      <p>Remember that PHP variable names are case-sensitive!</p>
+      <h2>Create PHP Variables</h2>
+      <p>Create two variables, named $x</code> and $y</code>:</p>
+      <p>In PHP, a variable starts with the <code>$</code> sign, followed by the name of the variable:</p>
+      <h3>Example</h3>
+      <p>Create two variables, named <code>$x</code> and <code>$y</code>:</p>
+      <code>
+        $x = 5;
+        $y = "John";
+      </code>
+      <p>In the example above, the variable <code>$x</code> will hold the value 5, and the variable <code>$y</code> will hold the value <code>"John"</code>.</p>
+      <p>Note: When you assign a text value to a variable, put quotes around the value.</p>
+      <p>Note: Unlike other programming languages, PHP has no command for declaring a variable. It is created the moment you assign a value to it.</p>
+    </section>
+
+    <section class="main-section" id="Data_Types">
+      <header>Data Types</header>
+      <p>Variables can store data of different types, and different data types can do different things.</p>
+      <p>PHP supports the following data types:</p>
+      <p>
+        <ol>
+          <li>string (text values)</li>
+          <li>int (whole numbers)</li>
+          <li>float (decimal numbers)</li>
+          <li>bool (true or false)</li>
+          <li>array (multiple values)</li>
+          <li>object (stores data as objects)</li>
+          <li>null (empty variable)</li>
+          <li>resource (references external resources)</li>
+        </ol>
+      </p>
+      <h2>Use var_dump() to Get the Data Type</h2>
+      <p>To get the data type and the value of a variable, use the var_dump() function.</p>
+      <h3>Example</h3>
+      <p>The var_dump() function dumps the data type and the value:</p>
+      <code>
+        $x = 5;
+        var_dump($x);
+      </code>
+      <h2>PHP String Data Type</h2>
+      <p>A string is a sequence of characters, like "Hello world!".</p>
+      <h3>Example</h3>
+      <code>
+        $x = 'Hello world!';
+        var_dump($x);
+      </code>
+      <h2>PHP Int Data Type</h2>
+      <p>An integer data type is a non-decimal number between -2,147,483,648 and 2,147,483,647.</p>
+      <p>Rules for integers:</p>
+      <p>
+        <ol>
+          <li>An integer must have at least one digit</li>
+          <li>An integer must not have a decimal point</li>
+          <li>An integer can be either positive or negative</li>
+          <li>Integers can be specified in: decimal (base 10), hexadecimal (base 16), octal (base 8), or binary (base 2) notation</li>
+        </ol>
+      </p>
+      <p>Example</p>
+      <code>
+        $x = 5985;
+        var_dump($x);
+      </code>
+    </section>
+
+    <section class="main-section" id="Strings">
+      <header>Strings</header>
+      <p>A string is a sequence of characters, like "Hello world!".</p>
+      <p>In PHP, strings are surrounded by either double quotes, or single quotes.</p>
+      <h3>Example</h3>
+      <code>
+          echo "Hello";
+          echo 'Hello';
+      </code>
+      <h2>Double or Single Quotes?</h2>
+      <p>You can use double or single quotes, but you should be aware of the differences between the two.</p>
+      <p>A double quoted string will substitute the value of variables, and accepts many special characters, like \n, \r, \t by escaping them.</p>
+      <h3>Example</h3>
+      <p>A double quoted string will substitute the value of variables:</p>
+      <code>
+        $x = "John";
+        echo "Hello $x"; 
+      </code>
+      <p>A single quoted string does not substitute the value of variables, and will output the string as it was written:</p>
+      <h3>Example</h3>
+      <p>A single quoted string outputs the string as it is:</p>
+      <code>
+        $x = "John";
+        echo 'Hello $x';
+      </code>
+      <p>Note: There is a difference between double quotes and single quotes in PHP.</p>
+    </section>
+
+    <section class="main-section" id="Numbers">
+      <header>Numbers</header>
+      <p>There are three main numeric types in PHP:</p>
+      <p><ol>
+        <ul><code>Integer</code></ul>
+        <ul><code>Float</code></ul>
+        <ul><code>Numeric Strings</code></ul>
+        </ol>
+      </p>
+      <p>In addition, PHP has two more data types used for numbers:</p>
+      <p><ol>
+        <ul><code>Infinity</code></ul>
+        <ul><code>NaN</code></ul>
+        </ol>
+      </p>
+      <p>Variables of numeric types are created when you assign a value to them:</p>
+      <h3>Example</h3>
+      <code>
+        $a = 5;
+        $b = 5.34;
+        $c = "25";
+      </code>
+      <p>To verify the data type of any variable/object in PHP, use the var_dump() function:</p>
+      <h3>Example</h3>
+      <code>
+        var_dump($a);
+        var_dump($b);
+        var_dump($c);
+      </code>
+      <h2>The PHP is_int() Function</h2>
+      <p>The is_int() function checks if the type of a variable is integer.</p>
+      <p>An integer is a number without any decimal part: 2, 256, -256, 10358, -179567 are all integers.</p>
+      <h3>Example</h3>
+      <p>Check if variable is of type integer:</p>
+      <code>
+        $x = 5985;
+        var_dump(is_int($x));
+        
+        $y = 59.85;
+        var_dump(is_int($y));
+      </code>
+    </section>
+
+  </main>
+
+</body>
+</html>
