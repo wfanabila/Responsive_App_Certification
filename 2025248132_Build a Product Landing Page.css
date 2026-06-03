@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fce7ea;
+}
+
+/* HEADER */
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #ff2400;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  z-index: 1000;
+}
+
+#header-img {
+  width: 120px;
+}
+
+/* NAV */
+#nav-bar {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* SECTIONS */
+section {
+  margin-top: 120px;
+  padding: 40px;
+  text-align: center;
+}
+
+#about-us {
+  background: #fce7ea;
+}
+
+#products {
+  background: #fce7ea;
+}
+
+#contact-us {
+  background: #fce7ea;
+}
+
+/* VIDEO */
+#video {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* FORM */
+#form {
+  text-align: center;
+  padding: 40px;
+  background: #fce7ea;
+}
+
+#email {
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+}
+
+#submit {
+  padding: 10px 20px;
+  background: white;
+  color: #2e7d32;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background: #c8e6c9;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 600px) {
+  #header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #nav-bar {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  section {
+    margin-top: 150px;
+  }
+}
